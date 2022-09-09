@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
  * main - entry point
  *
@@ -9,10 +7,16 @@
  */
 int main(void)
 {
-	char a_z;
+	char a;
 
-	for (a_z = 'a'; a_z <= 'z'; a_z++)
-		putchar(a_z);
+	for (a = 'a'; a <= 'z'; a++)
+	{
+		if (a == 'q' || a == 'e')
+		{
+			continue;
+		}
+		putchar(a);
+	}
 	putchar('\n');
 	return (0);
 }
