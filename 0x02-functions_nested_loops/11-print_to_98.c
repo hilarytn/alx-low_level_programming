@@ -2,7 +2,7 @@
 #include "6-abs.c"
 #include <stdio.h>
 /**
- * print_to_98(int n)
+ * print_to_98
  * to print n to 98
  * natural numbers
  */
