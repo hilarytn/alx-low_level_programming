@@ -4,6 +4,8 @@
 /**
  * print_to_98 - print natural numbers
  *
+ * @n: first natural number
+ *
  * Return: always return 0
  *
  */
