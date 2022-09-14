@@ -2,15 +2,10 @@
 #include "6-abs.c"
 #include <stdio.h>
 /**
- * main - entry point
+ * print_to_98 - print natural numbers
  *
  * Return: always return 0
  *
- */
-/**
- * void print_to_98(int n)
- * to print n to 98
- * natural numbers
  */
 void print_to_98(int n)
 {
