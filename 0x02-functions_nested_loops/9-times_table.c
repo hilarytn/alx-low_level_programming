@@ -1,8 +1,6 @@
 #include "main.h"
 /**
- * main - entry point 
- *
- * Return: always return 0
+ * times_table - times table function
  *
  */
 void times_table(void)
@@ -15,7 +13,7 @@ void times_table(void)
 			for (j = 0; j <= 9; i++)
 			{
 				int prod = j * i;
-				
+
 				if (j == 0)
 				{
 					_putchar('0');
