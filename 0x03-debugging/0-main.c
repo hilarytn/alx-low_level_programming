@@ -3,6 +3,7 @@
 /**
  * positive_or_negative - prints positive or negative
  *
+ * @i: parameter to check
  * main - tests function that prints if integer is positive or negative
  *
  * Return: 0
