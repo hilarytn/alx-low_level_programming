@@ -1,12 +1,25 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * more_numbers - print numbers 1-14 10x
+ *
+ * main - entry point
  *
  * Return: Always 0.
  */
-int main(void)
+void more_numbers(void)
 {
-	more_numbers();
-	return (0);
+	int i;
+	int j;
+
+	for (i = 0; i < 10; i++)
+	{
+		for (j = '0'; j <= '14'; j++)
+		{
+			_putchar(j);
+		}
+		_putchar('\n');
+	}
+	_putchar('\n');
+	return;
 }
