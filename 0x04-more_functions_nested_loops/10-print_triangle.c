@@ -1,4 +1,3 @@
-#include "main.h"
 
 /**
  * print traingle - prints triangle
@@ -29,4 +28,4 @@ void print_triangle(int size)
 			_putchar('\n');
 		}
 	}
-}
+}i
