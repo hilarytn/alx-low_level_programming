@@ -1,4 +1,4 @@
-
+#include "main.h"
 /**
  * print traingle - prints triangle
  *
