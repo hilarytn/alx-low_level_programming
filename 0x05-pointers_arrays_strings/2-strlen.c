@@ -5,7 +5,7 @@
  * @s: String to count
  *
  * Return: String length
- *           */
+ */
 int _strlen(char *s)
 {
 	int i = 0;
