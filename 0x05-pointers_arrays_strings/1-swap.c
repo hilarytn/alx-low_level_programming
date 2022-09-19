@@ -6,8 +6,9 @@
  * @a: An integer to swap
  * @b: Another integer to swap
  * @hldr: a value holder for a
- *             * Return: void
- *               */
+ *
+ * Return: void
+ */
 void swap_int(int *a, int *b)
 {
 	int hldr;
