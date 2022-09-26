@@ -23,6 +23,7 @@ char *_strchr(char *s, char c)
 			s += j;
 			return (s);
 		}
+		j++;
 	}
 
 	return ('\0');
