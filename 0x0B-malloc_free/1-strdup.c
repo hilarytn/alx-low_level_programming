@@ -26,6 +26,6 @@ char *_strdup(char *str)
 	for (i = 0; i < j; i++)
 		allocated[i] = str[i];
 
-	return (j);
+	return (allocated);
 
 }
