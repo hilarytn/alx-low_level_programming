@@ -34,16 +34,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (str == NULL)
 		return (NULL);
 
-	k = 0;
+	lens2 = 0;
 	while (j < l)
 	{
-		if (j <= i)
+		if (j <= lens1)
 			str[j] = s1[j];
 
 		if (j >= lens1)
 		{
 			str[j] = s2[lens2];
-			k++;
+			lens2++;
 		}
 		j++;
 	}
