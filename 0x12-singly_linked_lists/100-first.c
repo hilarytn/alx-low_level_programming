@@ -4,7 +4,7 @@ void first(void) __attribute__ ((constructor));
 
 /**
  * first - ...
- * 
+ *
  * Return: Nothing.
  */
 void first(void)
