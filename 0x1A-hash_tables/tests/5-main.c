@@ -1,26 +1,32 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-#include "../hash_tables.h"
+#include "hash_tables.h"
 
 /**
- * main - check the code for Holberton School students.
+ * hash_table_print - prints the keys and values of the hash table
  *
- * Return: Always EXIT_SUCCESS.
+ * @ht: pointer to the hash table
+ * Return: no return
  */
-int main(void)
+void hash_table_print(const hash_table_t *ht)
 {
-	hash_table_t *ht;
+	unsigned long int i;
+	hash_node_t *tmp;
+	char *sep;
 
-	ht = hash_table_create(1024);
-	hash_table_print(ht);
-	hash_table_set(ht, "c", "fun");
-	hash_table_set(ht, "python", "awesome");
-	hash_table_set(ht, "Jennie", "and Jay love asm");
-	hash_table_set(ht, "N", "queens");
-	hash_table_set(ht, "Asterix", "Obelix");
-	hash_table_set(ht, "Betty", "Holberton");
-	hash_table_set(ht, "98", "Battery Street");
-	hash_table_print(ht);
-	return (EXIT_SUCCESS);
+	if (ht == NULL)
+		return;
+
+	printf("{");
+	sep = "";
+
+	for (i = 0; i < ht->size; i++)
+	{
+		tmp = ht->array[i];
+		while (tmp != NULL)
+		{
+			printf("%s'%s': '%s'", sep, tmp->key, tmp->value);
+			sep = ", ";
+			tmp = tmp->next;
+		}
+	}
+	printf("}\n");
 }
